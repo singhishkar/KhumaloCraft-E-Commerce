@@ -282,22 +282,39 @@ dotnet run
   - Transaction-related data.
 - **Dynamic Data Display**: Dynamically retrieves and displays craftwork details from the database, replacing the initial static content.
 - **Product Information Display**: Displays key product information, including the product name, price, category, and availability.
+- **Data Insertion (Administrative)**: Users can insert new data (related to products, categories, etc.) into the SQL database directly through the web application interface
 
 ### User & Customer Functionality
 
 - **User Identity**: Includes **ASP.NET Core Identity** for secure user authentication, registration, and authorization (required for user, client, and KhumaloCraft users).
 - **Client Ordering**: Clients have the ability to place orders for a craftwork they wish to purchase. (simulated)
 
+### Administrative and E-commerce Workflow
+
+- **Order Visibility**: KhumaloCraft administrators are able to see stock inventory orders.
+- **Order Processing**: KhumaloCraft users are able to process client orders.
+
 ### Advanced Azure Services Integration (Part 3)
 
 - **Azure Durable Functions** (Order Workflow Automation): Implements a serverless function workflow to manage multi-step processes.
   - **Orchestrator Function**: Coordinates the different, complex steps in the order processing workflow (e.g., inventory updates, payment, confirmation).
   - **Inventory Management**: An activity function is dedicated to inventory-related tasks, ensuring the inventory is updated immediately after an order is placed.
-  - **Notification Workflow**: Orchestrator manages the notification workflow using activity functions to send push notifications to the client at various stages of the order process.
+  - **Notification Workflow**: Orchestrator manages the notification workflow using activity functions.
 
 ---
 
 ## 🖼️ 4. Screenshots
+
+|                  Heading                   |                                                 Description                                                 |                          Image / Screenshots                          |
+| :----------------------------------------: | :---------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------: |
+|           **Welcome/Home Page**            |                              Welcomes user to the site and browse to products.                              |                  ![Home Page](Screenshots/Home.png)                   |
+|       **My Work Page/Products Page**       |                                    List of available products or items.                                     |       ![My Work Page/Products Page](Screenshots/MyWorkPage.png)       |
+|         **Products Continued...**          |                             Scrollable view showing remaining product listings.                             |            ![Products Continued](Screenshots/Products.png)            |
+|          **Adding Items To Cart**          |                                   Users cart after adding items to cart.                                    |             ![Adding Items To Cart](Screenshots/Cart.png)             |
+|            **Checkout Details**            |  Users input checkout details (name, email, cell number, address, purchase type) before confirming order.   |             ![Checkout Details](Screenshots/Checkout.png)             |
+|        **Order Successful Message**        |           The confirmation screen displayed to the user after a successful purchase transaction.            |     ![Order Successful Message](Screenshots/CheckoutSuccess.png)      |
+| **CRUD functionality (Admin): Categories** | Admin interface showing the ability to **C**reate, **R**ead, **U**pdate, and **D**elete product categories. | ![CRUD functionality (Admin): Categories](Screenshots/Categories.png) |
+|  **Stock/Inventory Updated in real time**  |   Products page highlighting the dynamic display of product stock levels following a purchase or update.    |  ![Stock/Inventory Updated in real time](Screenshots/Inventory.png)   |
 
 ---
 
