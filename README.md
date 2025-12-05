@@ -6,6 +6,12 @@
 
 ---
 
+**Admin Login Credentials** <br>
+**Email**: _admin@gmail.com_ <br>
+**Password**: _Admin@123_ <br>
+
+---
+
 ## 📑 Table of Contents
 
 ✨ 1. [**Introduction**](#-1-introduction)<br>
