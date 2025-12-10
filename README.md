@@ -161,14 +161,17 @@ This configuration stores **connection strings**, **custom settings**, and **log
 
 ```json
 {
-  "ConnectionStrings": {},
   "Logging": {
     "LogLevel": {
       "Default": "Information",
       "Microsoft.AspNetCore": "Warning"
     }
   },
-  "AllowedHosts": "*"
+  "AllowedHosts": "*",
+
+  "ConnectionStrings": {
+    "KhumaloCraft": "Server=tcp:<YOUR_SERVER_NAME>.database.windows.net,1433;Initial Catalog=<YOUR_DATABASE_NAME>;Persist Security Info=False;User ID=<YOUR_USERNAME>;Password=<YOUR_PASSWORD>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  }
 }
 ```
 
